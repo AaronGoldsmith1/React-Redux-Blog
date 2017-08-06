@@ -30,14 +30,11 @@ ReactDOM.render(
     { /* <App /> */ }
     <div>
     <BrowserRouter>
+      <div>
       <Route path="/hello" component={Hello} />
-    </BrowserRouter>
-
-    <BrowserRouter>
     <Route path="/goodbye" component={GoodBye} />
+  </div>
     </BrowserRouter>
-
-
   </div>
 
   </Provider>
