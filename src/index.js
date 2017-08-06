@@ -5,6 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 import reducers from './reducers';
+import PostsIndex from './components/PostsIndex';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -15,8 +16,8 @@ ReactDOM.render(
 
     <BrowserRouter>
     <div>
-      { /* <Route />
-    <Route  /> */ }
+    <Route path="/" component={PostsIndex} />
+
   </div>
     </BrowserRouter>
 
